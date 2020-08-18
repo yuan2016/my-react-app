@@ -1,7 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css'
+import { Button } from 'antd'
 
+function test() {
+  console.log('click me')
+}
 function App() {
   return (
     <div className="App">
@@ -18,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button type="primary" onClick={test}>Click me</Button>
       </header>
     </div>
   );
